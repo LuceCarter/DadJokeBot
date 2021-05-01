@@ -6,6 +6,16 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="joke.wav" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="joke.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="System.Windows.Extensions" Version="5.0.0" />
   </ItemGroup>
 

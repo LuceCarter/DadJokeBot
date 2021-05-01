@@ -33,10 +33,10 @@ namespace DadJokeBot
             
             try
             {
-                await File.WriteAllTextAsync("D:/LuceCarter/joke.txt", joke);
+                await File.WriteAllTextAsync("joke.txt", joke);
 
                 var soundPlayer = new SoundPlayer();
-                soundPlayer.SoundLocation = "D:/LuceCarter/joke.wav";
+                soundPlayer.SoundLocation = "joke.wav";
                 soundPlayer.Play();
 
             } catch (Exception ex)
